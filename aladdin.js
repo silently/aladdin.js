@@ -1,3 +1,9 @@
+/**
+* @license
+* Aladdin 0.1.0 <https://github.com/silently/aladdin.js>
+* Copyright (c) 2013 Guillaume Denis (silently)
+* Available under MIT license <http://opensource.org/licenses/MIT>
+*/
 var Aladdin = { Lamp: function(){} };
 
 (function() {
