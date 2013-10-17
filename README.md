@@ -1,8 +1,8 @@
 ## Intro and usage
 
-Aladdin's lamp is your *a*synchronous and *l*igthweight *a*sset *m*anager *p*al.
+Aladdin's lamp is your **a**synchronous and **l**igthweight **a**sset **m**anager **p**al.
 
-You can request a single image, rub the lamp so that your vow is fulfilled (meaning *downloaded*) and be notified:
+You can request a single image, rub the lamp so that your vow is fulfilled (meaning *downloaded*) and then get notified:
 
     var lamp = new Aladdin.Lamp();
     lamp.request('/img/genius-memories.png');
@@ -13,11 +13,12 @@ But you may have several requests:
 
     var sizes = ['/img/s.png', '/img/m.png', '/img/l.png', '/img/xl.png'];
     lamp.request(sizes);
-    lamp.request('/img/xs.png');// I forgot this one
+    lamp.request('/img/xs.png');// this one too
     lamp.rub();
     lamp.on('fulfilled', function() { console.log('all sizes downloaded'); });
 
 You can also pack assets into bundles:
+
     var splashScreen = ['/img/bg.jpg', '/img/loading.gif'];
     var intro = ['img/logo.png', 'img/trees.png', 'img/houses.png'];
     lamp.request(splashScreen, 'splash-screen');
