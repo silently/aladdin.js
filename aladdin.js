@@ -82,6 +82,7 @@ var Aladdin = { Lamp: function(){} };
           cache[uri].onload = onload(uri, bundle);
           cache[uri].src = uri;
         }
+        return self;
       },
       on = function(eventName, callback) {
         // args processings
@@ -101,6 +102,7 @@ var Aladdin = { Lamp: function(){} };
             bundleCallbacks[bundle].push(callback);
           }
         }
+        return self;
       },
       get = function(uri) {
         return cache[uri];
