@@ -48,13 +48,13 @@ Once the sources has been downloaded link to them:
 
 ## TODO
 
-+ support Audio
++ support Audio objects
 + write tests
 
 ## Inspiration
 
 Aladdin's asset manager has been inspired by this html5rocks [tutorial](http://www.html5rocks.com/en/tutorials/games/assetmanager/ "Simple Asset Management for HTML5 Games"), especially enhanced with asset bundles and events. Stoyan Stefanov's *JavaScript Patterns* book has also guided this implementation.
 
-** License
+## License
 
 MIT
