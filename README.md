@@ -2,7 +2,7 @@
 
 Aladdin's lamp is your **a**synchronous and **l**igthweight **a**sset **m**anager **p**al.
 
-You request images (requests are queued) and then rub the lamp (downloads start). When all downloads in the queue are completed,your vows are fulfilled and you get notified:
+You request images (requests are queued) and then rub the lamp (downloads start). When all downloads in the queue are completed, your vows are fulfilled and you get notified:
 
     var lamp = new Aladdin.Lamp();
     lamp.request('/img/genius-memories.png');
@@ -27,12 +27,12 @@ You may also organize assets into bundles and chain lamp calls:
       .on('fulfilled:splash-screen', function() {
         // display splash screen here...
         // and launch subsequent downloads
-        lamp.rub('intro');
+        this.rub('intro');
       })
       .on('fulfilled:intro', function() {
         // display intro here...
       })
-      .rub('splash-screen');// start downloads
+      .rub('splash-screen');// downloads start
 
 What matters here is the bundle names you pass to the *request* and *rub* methods.
 
